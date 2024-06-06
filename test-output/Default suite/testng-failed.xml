@@ -5,7 +5,7 @@
     <classes>
       <class name="Oasys.Oasysapp.Appa">
         <methods>
-          <include name="enterFirstname" invocation-numbers="0"/>
+          <include name="enterFirstname" invocation-numbers="0 1 2 3"/>
           <include name="setup"/>
           <include name="teardown"/>
         </methods>

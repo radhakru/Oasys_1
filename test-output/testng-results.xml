@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-06T18:32:12 IST" name="OasysApp" finished-at="2024-06-06T18:33:43 IST" duration-ms="91113">
+  <suite started-at="2024-06-07T01:11:59 IST" name="OasysApp" finished-at="2024-06-07T01:13:36 IST" duration-ms="96906">
     <groups>
     </groups>
-    <test started-at="2024-06-06T18:32:12 IST" name="OasysDataBIMS" finished-at="2024-06-06T18:33:43 IST" duration-ms="91113">
+    <test started-at="2024-06-07T01:11:59 IST" name="OasysDataBIMS" finished-at="2024-06-07T01:13:36 IST" duration-ms="96906">
       <class name="Oasys.Oasysapp.Appa">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Oasys.Oasysapp.Appa@c333c60]" started-at="2024-06-06T18:32:12 IST" name="setup" finished-at="2024-06-06T18:32:14 IST" duration-ms="2318" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Oasys.Oasysapp.Appa@2cd2a21f]" started-at="2024-06-07T01:11:59 IST" name="setup" finished-at="2024-06-07T01:12:05 IST" duration-ms="5566" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="create_an_account()[pri:0, instance:Oasys.Oasysapp.Appa@c333c60]" started-at="2024-06-06T18:32:14 IST" name="create_an_account" finished-at="2024-06-06T18:32:17 IST" duration-ms="2525" status="PASS">
+        <test-method signature="create_an_account()[pri:0, instance:Oasys.Oasysapp.Appa@2cd2a21f]" started-at="2024-06-07T01:12:05 IST" name="create_an_account" finished-at="2024-06-07T01:12:08 IST" duration-ms="2954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create_an_account -->
-        <test-method signature="enterFirstname(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Oasys.Oasysapp.Appa@c333c60]" started-at="2024-06-06T18:32:18 IST" name="enterFirstname" data-provider="testdata" finished-at="2024-06-06T18:32:18 IST" duration-ms="107" status="FAIL">
+        <test-method signature="enterFirstname(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Oasys.Oasysapp.Appa@2cd2a21f]" started-at="2024-06-07T01:12:10 IST" name="enterFirstname" data-provider="testdata" finished-at="2024-06-07T01:12:10 IST" duration-ms="159" status="FAIL">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -87,7 +87,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterFirstname -->
-        <test-method signature="enterFirstname(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Oasys.Oasysapp.Appa@c333c60]" started-at="2024-06-06T18:32:18 IST" name="enterFirstname" data-provider="testdata" finished-at="2024-06-06T18:32:46 IST" duration-ms="28041" status="PASS">
+        <test-method signature="enterFirstname(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Oasys.Oasysapp.Appa@2cd2a21f]" started-at="2024-06-07T01:12:10 IST" name="enterFirstname" data-provider="testdata" finished-at="2024-06-07T01:12:38 IST" duration-ms="28136" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -136,7 +136,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterFirstname -->
-        <test-method signature="enterFirstname(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Oasys.Oasysapp.Appa@c333c60]" started-at="2024-06-06T18:32:46 IST" name="enterFirstname" data-provider="testdata" finished-at="2024-06-06T18:33:14 IST" duration-ms="27836" status="PASS">
+        <test-method signature="enterFirstname(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Oasys.Oasysapp.Appa@2cd2a21f]" started-at="2024-06-07T01:12:38 IST" name="enterFirstname" data-provider="testdata" finished-at="2024-06-07T01:13:06 IST" duration-ms="27571" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -185,56 +185,56 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterFirstname -->
-        <test-method signature="enterFirstname(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Oasys.Oasysapp.Appa@c333c60]" started-at="2024-06-06T18:33:14 IST" name="enterFirstname" data-provider="testdata" finished-at="2024-06-06T18:33:41 IST" duration-ms="27467" status="PASS">
+        <test-method signature="enterFirstname(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Oasys.Oasysapp.Appa@2cd2a21f]" started-at="2024-06-07T01:13:06 IST" name="enterFirstname" data-provider="testdata" finished-at="2024-06-07T01:13:34 IST" duration-ms="27817" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Gopal]]>
+                <![CDATA[PRASANNA ]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Mandal]]>
+                <![CDATA[TARAI]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[17.0]]>
+                <![CDATA[12.0]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[163.0]]>
+                <![CDATA[112.0]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[310.0]]>
+                <![CDATA[234.0]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[Junusnagar]]>
+                <![CDATA[SINGITALIA]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[8.658530367E9]]>
+                <![CDATA[8.328961274E9]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[rameshmistri789@gmail.com]]>
+                <![CDATA[rajatmohantysahapur@gmail.com]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterFirstname -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Oasys.Oasysapp.Appa@c333c60]" started-at="2024-06-06T18:33:41 IST" name="teardown" finished-at="2024-06-06T18:33:43 IST" duration-ms="2130" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Oasys.Oasysapp.Appa@2cd2a21f]" started-at="2024-06-07T01:13:34 IST" name="teardown" finished-at="2024-06-07T01:13:36 IST" duration-ms="2743" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
