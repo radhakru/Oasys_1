@@ -27,6 +27,7 @@ public class ReadExcelFile {
 	private XSSFCell xssfCell, xssfCell1;
 
 	private FileInputStream fis;
+	private FileOutputStream fos;
 
 	/*
 	 * @Test(dataProvider="LoginData") public void Test(String name,String password)
@@ -71,12 +72,9 @@ public class ReadExcelFile {
 
 		System.out.println("RowSize=" + rowsize);
 		System.out.println("CellSize=" + cellSize);
-		
 
 		// initialize the Object[][].
 		object = new String[rowsize + 1][2];
-		
-		
 
 //
 		// store all the excel value to two dimensional array which is object[][].
@@ -89,11 +87,10 @@ public class ReadExcelFile {
 //					object[i][j] = String.valueOf(xssfSheet.getRow(i).getCell(j).getNumericCellValue());
 ////					System.out.println("This is for only 7 cell");
 //				} 
-				
-					System.out.println(xssfSheet.getRow(i).getCell(j).getStringCellValue());
-					object[i][j] = xssfSheet.getRow(i).getCell(j).getStringCellValue();
+
+				System.out.println(xssfSheet.getRow(i).getCell(j).getStringCellValue());
+				object[i][j] = xssfSheet.getRow(i).getCell(j).getStringCellValue();
 //					System.out.println("This is for all");
-				
 
 			}
 
@@ -108,6 +105,32 @@ public class ReadExcelFile {
 		}
 
 		return object;
+
+	}
+
+	public void create_Cell1() throws IOException {
+		fis = new FileInputStream(System.getProperty("user.dir") + "//Externaldata//nameandpass.xlsx");
+		xssfworkbook = new XSSFWorkbook(fis);
+		xssfSheet = xssfworkbook.getSheet("Sheet1");
+		short cellnum = xssfSheet.getRow(0).getLastCellNum();
+		Short cell_value = cellnum;
+		System.out.println("cell value" + cellnum);
+		while (cellnum != 0) {
+			System.out.println("cell value=" + xssfSheet.getRow(0).getCell(cellnum - 1).getStringCellValue());
+			cellnum--;
+		}
+
+		// create cell
+		if (xssfSheet.getRow(0).getCell(cell_value - 1).getStringCellValue().equals("Password")) {
+			xssfSheet.getRow(0).createCell(cell_value).setCellValue("phone no");
+			fos = new FileOutputStream(System.getProperty("user.dir") + "//Externaldata//nameandpass.xlsx");
+			xssfworkbook.write(fos);
+			fos.close();
+		}
+
+		System.out.println("Lastcell number after creating one cell.." + xssfSheet.getRow(0).getLastCellNum());
+		fis.close();
+		System.out.println("Successfully created....");
 
 	}
 

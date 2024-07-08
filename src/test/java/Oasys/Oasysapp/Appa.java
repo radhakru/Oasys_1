@@ -48,6 +48,8 @@ public class Appa {
 		driver.findElement(By.xpath("//*[@id='btnseed2']")).click();
 		
 	}
+
+	
 	int count=0;
 	@Test(dataProvider="testdata",dataProviderClass=ReadExcelFile.class)
 	public void enterFirstname(String username,String pass) throws InterruptedException, IOException
@@ -59,10 +61,16 @@ public class Appa {
 		driver.findElement(By.id("txtFirstName")).sendKeys("rama"+count);
 		driver.navigate().refresh();
 		
+		readexcel=new ReadExcelFile();
+		readexcel.create_Cell1();
+		
+		
 	}
 	
+	
 	@AfterTest
-	public void teardown() throws InterruptedException {
+	public void teardown() throws InterruptedException, IOException {
+		
 		Thread.sleep(2000);
 		driver.close();
 	}
